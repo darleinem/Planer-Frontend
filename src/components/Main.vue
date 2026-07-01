@@ -8,6 +8,7 @@
 
 <style scoped>
 .main {
-
+  border: black solid 1px;
+  background-color: indianred;
 }
 </style>
