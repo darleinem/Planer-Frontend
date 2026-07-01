@@ -1,18 +1,15 @@
-import { fileURLToPath, URL } from 'node:url'
-
+// @ts-ignore
 import { defineConfig } from 'vite'
+
+// @ts-ignore
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
+// @ts-ignore
 export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-  },
+  ]
 })
